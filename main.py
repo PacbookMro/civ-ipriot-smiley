@@ -4,6 +4,7 @@ That is, delete the sense_hat.py file that is included in this bundle."""
 import time
 
 from happy import Happy
+from sad import Sad
 
 if __name__ == '__main__':
     # This is only needed if you have not deleted sense_hat.py
@@ -14,6 +15,7 @@ if __name__ == '__main__':
 
     # Create a happy smiley, which is a subclass of Smiley
     smiley = Happy()
+    frowny = Sad()
 
     # This is a form of #polymorphism, as the Happy smiley class
     # does not have a method called .show(). This means that
@@ -21,6 +23,7 @@ if __name__ == '__main__':
     # used in stead. There is no need to specify the base
     # class, like in other, statically typed, languages.
     smiley.show()
+    frowny.show()
 
     # Just a short delay
     time.sleep(1)
@@ -30,3 +33,6 @@ if __name__ == '__main__':
     # is defined as an interface (i.e., an abstract base class
     # with an abstract method).
     smiley.blink()
+    frowny.blink()
+
+
